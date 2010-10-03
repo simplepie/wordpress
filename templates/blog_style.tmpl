@@ -1,0 +1,12 @@
+<div class="simplepie">
+	{IF_ERROR_BEGIN}<p class="error">{ERROR_MESSAGE}</p>{IF_ERROR_END}
+
+	<h3><a href="{FEED_PERMALINK}">{FEED_TITLE}</a></h3>
+	<p>{FEED_DESCRIPTION}</p>
+
+	{ITEM_LOOP_BEGIN}
+		<h4><a href="{ITEM_PERMALINK}">{ITEM_TITLE}</a> <span class="date">{ITEM_DATE}</span></h4>	
+		{TRUNCATE_ITEM_DESCRIPTION}
+		<p><small>Source: <img src="{ITEM_PARENT_FAVICON}" alt="{ITEM_PARENT_TITLE}" title="{ITEM_PARENT_TITLE}" /> <a href="{ITEM_PARENT_PERMALINK}">{ITEM_PARENT_TITLE}</a> | {ITEM_AUTHOR_NAME}</small></p>
+	{ITEM_LOOP_END}
+</div>

@@ -1,0 +1,10 @@
+<div class="simplepie sideblog">
+	{IF_ERROR_BEGIN}<p class="error">{ERROR_MESSAGE}</p>{IF_ERROR_END}
+
+	<h3>Sideblog <a href="{SUBSCRIBE_URL}"><img src="{PLUGIN_DIR}/images/feed.png" alt="feed" title="Subscribe to this feed!" /></q></h3>
+	<ul>
+		{ITEM_LOOP_BEGIN}
+		<li><strong><a href="{ITEM_PERMALINK}">{TRUNCATE_ITEM_TITLE}</a></strong> <small><i>{ITEM_DATE}</i></small><br/>{TRUNCATE_ITEM_DESCRIPTION}</li>
+		{ITEM_LOOP_END}
+	</ul>
+</div>

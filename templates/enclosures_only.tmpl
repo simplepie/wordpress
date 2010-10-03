@@ -1,0 +1,8 @@
+<div class="simplepie">
+	{IF_ERROR_BEGIN}<p class="error">{ERROR_MESSAGE}</p>{IF_ERROR_END}
+
+	{ITEM_LOOP_BEGIN}
+		<h4><img src="{ITEM_PARENT_FAVICON}" alt="{ITEM_PARENT_TITLE}" title="{ITEM_PARENT_TITLE}" /> <a href="{ITEM_PERMALINK}">{ITEM_TITLE}</a></h4>
+		{ITEM_ENCLOSURE_EMBED}
+	{ITEM_LOOP_END}
+</div>
